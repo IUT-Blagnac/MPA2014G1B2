@@ -1,0 +1,9 @@
+		<script>
+			 // li click handler which fills the projects search bar
+			 // with the value of the current data-find attribute
+			 $( 'li[data-find]' ).on( 'click',function(event){
+			  $("#autocomplete-input-projet").val($(this).attr('data-find')).trigger('change');
+			 });
+		</script>
+	</body>
+</html>

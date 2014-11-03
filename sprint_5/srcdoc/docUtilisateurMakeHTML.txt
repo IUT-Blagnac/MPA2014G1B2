@@ -1,0 +1,32 @@
+= MakeOPTIWeb : Documentation Utilisateur
+:Author:  DUT/INFO/M3301
+:lang: fr
+
+*********************
+'MakeOPTIweb' est une application Java de *génération* de page HTML permettant de consulter les projets tutorés gérés par OPTI.
+*********************
+
+== Fiche projet - SPRINT 4
+
+[icon="../../images/UT2JJ128.png"]
+[TIP]
+====
+Membres de l'équipe:: Alex JAQUOT-FERNANDEZ, Romain NOTO, Théo PIBOUBES, Hanae RHAYOUR, Aurélien SCUOTTO et Damien WOJTOWICZ
+
+*Université Toulouse 2 - IUT de Blagnac*
+
+Formation:: DUT INFO S3/Module MPA
+Projet:: OPTI/OPTIweb
+====
+
+== Fonctionnalités disponibles - SPRINT 4
+
+.Application
+--
+- En tant qu'utilisateur, je veux pouvoir générer une page HTML de projets tutorés à partir d'un fichier de configuration CSV
+--
+
+== Comment lancer l'application MakeOPTIWeb
+
+.Double-cliquer sur l'icône MakeOPTIWeb.jar
+.Le fichier HTML généré se trouvera dans le même dossier que le fichier .jar
