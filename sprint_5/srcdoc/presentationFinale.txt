@@ -77,52 +77,58 @@ In spite of the unfinished version o OPTI, we did produced a fully-usable OPTI W
 
 == A cost accordingly-based on our working time
 
-As an estimation of the amout of money our work may have cost to a company, we tought that the salary of each member of the team was about 35,00€ an hour, including all the taxes on work. Considerating that we worked 55 hours on the project, and that we were six, the cost for a corporation would be :
+As an estimation of the amout of money our work may have cost to a company, we tought that the salary of each member of the team was about 35,00€ an hour, including all the taxes on work and social contributions. Considerating that we worked 55 hours on the project, and that we were six, the cost for a corporation would be :
 
 6*35,00*50 = 11.550€
 
-Off course, that value doesn't include the cost of the energy consumed by the computers and the lights, or any charges linked to the material buys, or even any miscalenious charges that a real company would have. 
+Of course, that value does not include the cost of the energy consumed by the computers and the lights, or any charges linked to the material buys, or even any miscalenious charges that a real company would have. 
 
 == A treacherous Java developpement
 
-Lorem ipsum...
+=== A great start
+
+During the sprints -1 to 1, we didn't really worked on the project since these steps were kinds of tutorials about SVN, how to use a respository, Redmine, how to use Eclipse without breaking the project and a plenty of other things about life in general (French lessons with the definition of "terminé" (finished in English), and so on). Things have started to get serious with the sprint 2. 
+We worked well, we splited the tasks between all the members of the team and we produced a first version of OPTI. Functionalities of that V1 are light, but they works well. 
+OPTI is designed on an MVC-based architecture; we have designed a class diagram for the Model as an objective of developpement for that package. The Controler package includes all the functionalities of OPTI Parser, a library that contains the functions needed to read and write data into .csv files. It also includes the controllers corresponding to the different classes of the Model. The View is a bit different from the others. Indeed, it builds the GUI, and it works like the master of the application: it contains the main class, and calls the controlers to get all the informations needed to fill the GUI with the informations the user wants.
+That was a great time.
+
+=== A deadly refactor
+
+Sprint 3 started, we opened the .html file with the instructions for the week, and then we have seen that picture:
+
+image:./images/DCsprint3.png[]
+
+That is the class diagram of the Model that customer is waiting for. It is pretty more elaborated than our one, so a big refactor had to be launched. Moreover, all the functionalities of the product backlog with a priority rank >=4 had to be finished. OPTI V1 we produced during sprint 2 have suddenely been deprecated, because of its lack of functionality and its incorrect Model architecture.
+Reforms had started: due to the new Model and some overworking classes in the Viex, we decided to restart the developement of OPTI about from scratch. We have read again the backlog, and we realized that a lot of functionalities were missed when we planified the developement of OPTI. For the first time, we weren't able to finish our work for the sprint. SVN problems and refactors of its structure issued a hugge waste of time. The View class have been completely and suceffuly refactored, but Controler and Model package weren't finished, so the project didn't compiled. 
+Update problems occured, and lots work on our test programs were lost. We were already timeless, so we were very late.
+
+=== Remembers form our "Première année"
+
+Things weren't really good in the project, and then sprint 4 started. As every time in the beggining of a new sprint we read the topic. And then: surprise! We had to develop an What's On like Web application for OPTI. The aim of that part was to code a program which generates an Hypertext Markup Language file, in order to get a cross-media view for the projects, topics, students and teachers linked to the tutored projects of the IUT. Developpement was easy, and we finished it on time the sprint. Our OPTI Web has all the functionalities asked in the product backlog.
 
 == An original team with different skills
 
-Lorem ipsum...
+Our team is composed by ourselves (we GUARANTEE that we don't lie). Usually, and on an human point of view, the feeling between us was good. Our skills were complementary: 
 
-== Hopefully, a universitary project for students
+-  Alex is good in writing Batch files and in AsciiDoc
+-  Romain is good in programming (with models and controlers) and in AsciiDoc
+-  Théo is good in programming, Batch, AsciiDoc and Redmine
+-  Hanae is good in AsciiDoc and communication
+-  Aurélien is good in programming (especially with GUI) and in technical and team management
+-  Damien is good in programming, Redmine, AsciiDoc and communication
 
-Lorem ipsum...
+The main problem in the team was the communiation about technical issues. Indeed, when a critical problem occured, the whole team was paralized because we wasn't able to separate all the problems and solve them one by one. Moreover, we wasn't attentive enough to the backlog: we started to code immediately after the beggining of the sprint 2 so we didn't planificated enough the amout of work to come.
 
+== Hopefully, OPTI is a universitary project for students
 
+According to the OPTI application we produce, we can say that we hopefully didn't work for any company or organization. It would have cost 11.550€ to the company for an unfinished application and a lot of useless work, on a capitalst point of view. However, we have learned a lot of things thanks to the MPA module:
 
+-  We have to read more carefully the backlog
+-  We must planificate the work
+-  We must communicate more efficientely about technical things
+-  We must break down the problems into small and easy-solvable pieces
+-  We had a view of the Agile method
+-  We learned a lot of things about project management
+-  We learned many things about test programs
 
-
-
-
-
--  item 1
--  item 2
--  item 3
-
-NOTE: On compte en moyenne 3mn par transparent
-
-== Second transparent
-
-image:./images/diag0.png[]
-
-NOTE: Plus que 8 slides
-
-
-== Troisième transparent
-
-.HelloMonde.java
-----
-include::../src/HelloMonde.java[]
-----
-
-== Perspectives
-
-image:./images/sieste.png[]
-
+NOTE: Thank you for your attention !
