@@ -1,14 +1,43 @@
-= MPA : Présentation finale de recette MPAstaff
-:Author:  DUT/INFO/M3301
+= MPA : Présentation finale de recette pour OPTI
+:Author:  Alex Jacquot--Fernandez, Roman Notto, Théo Piboubes, Hanae Rhayour, Aurélien Scuotto, Damien Wojtowicz
 :lang: fr
 :slideshowlocation: Your computer
 :copyright: {date={localdate}}, {slideshowlocation} *** {author} *** Powered by AsciiDoc and W3C Slidy &#169; 
 :duration: 30
 :incremental: 1
 
-== Premier transparent
+== OPTI à la sauce G1B2 : une réussite en demi-teinte
 
-A vous ...
+=== L'inachevé OPTI
+
+
+
+=== Le succès d'OPTI web
+
+
+
+== Un coût en accord avec la charge de travail effectuée
+
+
+
+== Un développement en langage Java semé d'embûches
+
+
+
+== Une équipe originale
+
+
+
+== Un projet qui était heureusement dans un cadre universitaire
+
+
+
+
+
+
+
+
+
 
 -  item 1
 -  item 2
