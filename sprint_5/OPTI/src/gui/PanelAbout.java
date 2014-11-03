@@ -49,10 +49,10 @@ public class PanelAbout extends JPanel {
 				+ "\n"
 				+ "\n"
 				+ "  Project OPTI\n"
-				+ "  Sprint 2\n"
+				+ "  Sprint 5\n"
 				+ "\n"
 				+ "  DUT INFO S3/Module MPA\n"
-				+ "  Université Toulouse 2\n"
+				+ "  Université Toulouse 2 Jean Jaurès\n"
 				+ "  IUT Blagnac\n";
 		return text;
 	}
