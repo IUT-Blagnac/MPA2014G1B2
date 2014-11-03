@@ -1,6 +1,7 @@
 = MPA : Présentation finale de recette pour OPTI
 :Author:  Alex Jacquot--Fernandez, Roman Notto, Théo Piboubes, Hanae Rhayour, Aurélien Scuotto, Damien Wojtowicz
 :lang: fr
+:toc:
 :slideshowlocation: Your computer
 :copyright: {date={localdate}}, {slideshowlocation} *** {author} *** Powered by AsciiDoc and W3C Slidy &#169; 
 :duration: 30
@@ -10,27 +11,27 @@
 
 === L'inachevé OPTI
 
-
+Lorem ipsum...
 
 === Le succès d'OPTI web
 
-
+Lorem ipsum...
 
 == Un coût en accord avec la charge de travail effectuée
 
-
+Lorem ipsum...
 
 == Un développement en langage Java semé d'embûches
 
-
+Lorem ipsum...
 
 == Une équipe originale
 
-
+Lorem ipsum...
 
 == Un projet qui était heureusement dans un cadre universitaire
 
-
+Lorem ipsum...
 
 
 
