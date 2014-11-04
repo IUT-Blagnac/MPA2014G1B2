@@ -27,3 +27,4 @@ script:
   - cd ../OPTIweb/test
   - cp OPTIwebprof.html /tmp/OPTIweb.html
   - casperjs test casperAccueil.js
+  - git push -u origin master
