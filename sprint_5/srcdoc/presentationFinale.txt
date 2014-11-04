@@ -7,9 +7,10 @@
 :duration: 30
 :incremental: 1
 
-image:./images/logoIUT.png[]
-image:./images/logoUTJJ.png[]
+== Context
 
+image::images/logoIUT.png[link="images/logoIUT.png"]
+image::images/logoUTJJ.png[link="images/logoUTJJ.png"]
 OPTI project have been executed according to the "MPA" module's program, as a second year of DUT Informatique work, at the IUT of Blagnac. The aim of the project have been the creation of an application providing to make easier the management of the tutored projects of the IUT. The process of developpement used to follow the sprint-based projects management method "Agile". We have worked for about 60 hours on that project.
 
 == 1B2 group's OPTI : a halftone success
@@ -96,7 +97,7 @@ That was a great time.
 
 Sprint 3 started, we opened the .html file with the instructions for the week, and then we have seen that picture:
 
-image:./images/DCsprint3.png[]
+image::images/DCsprint3.png[link="images/DCsprint3.png"]
 
 That is the class diagram of the Model that customer is waiting for. It is pretty more elaborated than our one, so a big refactor had to be launched. Moreover, all the functionalities of the product backlog with a priority rank >=4 had to be finished. OPTI V1 we produced during sprint 2 have suddenely been deprecated, because of its lack of functionality and its incorrect Model architecture.
 Reforms had started: due to the new Model and some overworking classes in the Viex, we decided to restart the developement of OPTI about from scratch. We have read again the backlog, and we realized that a lot of functionalities were missed when we planified the developement of OPTI. For the first time, we weren't able to finish our work for the sprint. SVN problems and refactors of its structure issued a hugge waste of time. The View class have been completely and suceffuly refactored, but Controler and Model package weren't finished, so the project didn't compiled. 
