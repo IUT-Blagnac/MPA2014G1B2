@@ -20,9 +20,10 @@ script:
   - ls -alF
   - cd sprint_5
   - echo Java Compilation
-  - javac -cp .;tools/junit.jar -d OPTI/bin OPTI/src/data/*.java
-  - javac -cp .;tools/junit.jar -d OPTI/bin OPTI/src/gui/*.java
-  - javac -cp .;tools/junit.jar -d OPTI/bin OPTI/src/library/*.java
+  - pwd
+  - javac -cp .;../junit.jar -d OPTI/bin/data OPTI/src/data/*.java
+  - javac -cp .;../junit.jar -d OPTI/bin/gui OPTI/src/gui/*.java
+  - javac -cp .;../junit.jar -d OPTI/bin/library OPTI/src/library/*.java
   - echo Launching Java tests
   - java -cp .;tools/junit.jar OPTI/bin/library/OptiParserTest
   - echo Documentations generation

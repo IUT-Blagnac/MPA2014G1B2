@@ -11,12 +11,12 @@
 
 image::images/logoIUT.png[link="images/logoIUT.png"]
 image::images/logoUTJJ.png[link="images/logoUTJJ.png"]
-OPTI project has been created during the "MPA" module. This projects consists in the creation of an application providing to make easier the management of the tutored projects of the IUT. The process of developpement used to follow the sprint-based projects management method "Agile". We have worked for about 60 hours on that project.
+OPTI project has been created during the "MPA" module. This project consists in the creation of an application making easier the management of the tutored projects of the IUT. The process of development followed the sprint-based projects management "Agile" method. We have worked for about 60 hours on this project.
 
 == 1B2 group's OPTI : a halftone success
 
-The weft of the project has issued severals perturbations, due to a lot of software architecture problems and comunication problems. Consequently, we are not able to deliver an application respecting the whole product backlog. The last runnable application has been released on sprint 2. Then, our work weren't enough to complete the backlog.
-However, our sprint 2 OPTI is well working. It provides differents functionalities to the user, as detailled in the next part. The main missing point was the cross-view of the data.
+The weft of the project has issued several perturbations, due to software architecture and communication issues. Consequently, we are not able to deliver an application respecting the whole product backlog. The last runnable application has been released on sprint 2. Then, our work wasn't enough to complete the backlog.
+However, our sprint 2 OPTI is working. It provides different functionalities to user, as detailed in the next part. The main missing point was the cross-view of the data.
 
 === The unfinished OPTI
 
