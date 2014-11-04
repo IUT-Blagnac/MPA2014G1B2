@@ -20,12 +20,12 @@ script:
   - ls -alF
   - cd sprint_5
   - echo Java Compilation
-  - javac -cp .:OPTI/bin/data -d OPTI/bin OPTI/src/data/*.java
-  - javac -cp .:OPTI/bin/gui -d OPTI/bin OPTI/src/gui/*.java
-  - javac -cp .:OPTI/bin/lib -d OPTI/bin OPTI/src/lib/*.java
+  - javac -cp .;tools/junit.jar -d OPTI/bin OPTI/src/data/*.java
+  - javac -cp .;tools/junit.jar -d OPTI/bin OPTI/src/gui/*.java
+  - javac -cp .;tools/junit.jar -d OPTI/bin OPTI/src/library/*.java
   - echo Launching Java tests
-  - java -cp .;junit.jar OPTI/bin/lib/OptiParserTest
-  - echo Documentations generatrion
+  - java -cp .;tools/junit.jar OPTI/bin/library/OptiParserTest
+  - echo Documentations generation
   - python ../asciidoc-8.6.7/asciidoc.py -b slidy -a data-uri -o srcdoc/presentationFinale.html srcdoc/presentationFinale.txt
   - ls -alF srcdoc
   - cd bin
