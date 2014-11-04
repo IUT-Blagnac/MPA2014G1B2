@@ -7,11 +7,11 @@
 :duration: 30
 :incremental: 1
 
-== Context
+== OPTI
 
 image::images/logoIUT.png[link="images/logoIUT.png"]
 image::images/logoUTJJ.png[link="images/logoUTJJ.png"]
-OPTI project have been executed according to the "MPA" module's program, as a second year of DUT Informatique work, at the IUT of Blagnac. The aim of the project have been the creation of an application providing to make easier the management of the tutored projects of the IUT. The process of developpement used to follow the sprint-based projects management method "Agile". We have worked for about 60 hours on that project.
+OPTI project has been created during the "MPA" module. This projects consists in the creation of an application providing to make easier the management of the tutored projects of the IUT. The process of developpement used to follow the sprint-based projects management method "Agile". We have worked for about 60 hours on that project.
 
 == 1B2 group's OPTI : a halftone success
 
