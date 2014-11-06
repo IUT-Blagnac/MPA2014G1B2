@@ -12,7 +12,7 @@ navigateurs et supports du moment (PC, tablettes, smartphones).
 
 == Fiche projet - SPRINT 4
 
-[icon="../../images/UT2JJ128.png"]
+[icon="images/logoUTJJ.png"]
 [TIP]
 ====
 Membres de l'équipe enseignante:: Jean-Michel BRUEL, Jean-Michel INGLEBERT, André PÉNINOU et Olivier ROQUES

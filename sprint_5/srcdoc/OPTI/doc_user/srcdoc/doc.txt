@@ -1,0 +1,169 @@
+= Documentation SPRINT 2
+:toc:
+:toc-title: Table des matières
+:Author:  Groupe projet 1B2
+:doctitle: Documentation du Projet MPA-M3301-G1B2
+:slideshowlocation: Your computer
+:copyright: {date={localdate}}, {slideshowlocation} *** {author} *** Powered by AsciiDoc and W3C Slidy &#169; 
+:revnumber: 2
+
+include::docConf.txt[]
+
+== Le projet OPTI - DUT INFO S3/Module MPA
+__Sprint 2  / IUT BLAGNAC__ 
+
+Participants : 
+
+- PIBOUBES Théo (SCRUM Master)
+- JACQUOT--FERNANDEZ Alex
+- RHAYOUR Hanae
+- SCUOTTO Aurélien
+- WOJTOWICZ Damien
+- NOTO Romain 
+
+
+== Présentation générale 
+
+=== backlog du projet 
+1.	Liste des sujets de projet tutoré de l’année 
+	a.	Créer/Supprimer/Modifier un sujet 
+	b.	Lister les sujets avec filtres 
+2.	Voeux des groupes d'étudiants 
+	a.	Définir des groupes d'étudiants 
+	b.	Associer des étudiants à des groupes 
+	c.	Définir les voeux d’un groupe 
+3.	Affectation des projets aux groupes d'étudiants 
+	a.	Définir (affectation) un sujet pour un groupe 
+	b.	Lister le nombre de voeux par rang pour un sujet 
+	c.	Lister pour un groupe le nombre de "concurrents" par rang de voeux. 
+	d.	Lister les projets affectés / non affectés 
+	e.	Lister les groupes affectés / non affectés 
+	f.	Calcul automatique de pré-affectation "au mieux" sur un ensemble de groupes non affectés 
+4.	Affectation des intervenants sur chaque projet tutoré 
+	a.	Définir les intervenants d’un projet tutoré 
+	b.	Lister les projets par intervenant 
+	c.	Lister les intervenants par projet 
+
+
+.Note
+Le produit délivré contient : +
+-	Une interface, qui sera dotée par la suite des fonctionnalités exigées +
+(capture)
+-	Une librairie, permettant d’écrire et de lire des fichiers CSV. +
+-	Un programme de tests unitaires, qui s’occupera de tester le bon fonctionnement de la libraire. +
+-	Un exécutable .jar qur lequel l'utilisateur doit double-cliquer afin d'ouvrir le programme. +
+
+
+
+
+== Présentation du produit
+L’interface se présente comme suit : 
+
+.A ce niveau, elle est dotée de plusieurs onglets : 
+about : La liste des membres du groupe 
+
+image::Apropos.png[link="images/Apropos.png",width="25%", align="center"]
+Students : la liste des étudiants, de leurs groupes réspectifs et de leurs noms et prénoms 
+
+image::Students.png[link="images/Students.png",width="25%", align="center"]
+
+Interv : les et prenoms des intervenants sur les projets 
+
+image::Interv.png[link="images/Interv.png",width="25%", align="center"]
+
+Subject : la liste des projets 
+
+image::Subject.png[link="images/Subject.png",width="25%", align="center"]
+
+projects : les affectation des projets aux groupes 
+
+image::project.png[link="images/project.png",width="25%", align="center"]
+
+.Pour chaque onglets
+* Possibilité de supprimer une ligne
+** Sélectionner la ligne/les lignes à supprimer (qui devrait se colorer)
++
+image::removeStudent.png[link="images/removeStudent.png",width="25%", align="center"]
+
+** Cliquer sur le bouton remove 
++
+image::removeStudentProof.png[link="images/removeStudentProof.png",width="25%", align="center"]
+
+* Possibilité de restaurer une ligne supprimée +
+** Cliquer sur le bouton Restore afin de restaurer la dernière ligne supprimée
++
+image::restore.png[link="images/restore.png",width="25%", align="center"]
+
+** Résultat + 
++
+image::restoreProof.png[link="images/restoreProof.png",width="25%", align="center"]
+
+
+* Possibilité d'ouvrir une liste d'acteurs à partir d'un fichier csv
+** Dans le menu supérieur gauche, cliquer sur le bouton File -> Sélectionner la liste à générer -> Open
++
+image::save1.png[link="images/save1.png",width="25%", align="center"]
+
+**  Sélectionner le fichier -> Cliquer sur Ok
++
+image::save2.png[link="images/save2.png",width="25%", align="center"]
+
+
+
+
+.Pour l'onglet Students
+* Possibilité d'ajouter une ligne +
+** Depuis l'onglet Students, cliquer sur le bouton Add  
++
+image::addStudent.png[link="images/addStudent.png",width="25%", align="center"]
+
+** Entrer le groupe et le nom de l'étudiant à ajouter
++
+image::addStudentPrompt.png[link="images/addStudentPrompt.png",width="25%", align="center"]
+
+** Valider en cliquant sur Ok (ou annuler en cliquant sur Cancel)
++
+image::addStudentProof.png[link="images/addStudentProof.png",width="25%", align="center"]
+
+
+.Pour l'onglet Teachers
+* Possibilité d'ajouter une ligne +
+** Depuis l'onglet Teachers, cliquer sur le bouton Add +
++
+image::addTeacher.png[link="images/addTeacherTeacher.png",width="25%", align="center"]
+
+** Entrer le nom de l'intervenant à ajouter
++
+image::addTeacherPrompt.png[link="images/addTeacherPrompt.png",width="25%", align="center"]
+
+** Valider en cliquant sur Ok (ou annuler en cliquant sur Cancel)
++
+image::addTeacherProof.png[link="images/addTeacherProof.png",width="25%", align="center"]
+
+.Pour l'onglet Subjects
+* Possibilité d'ajouter une ligne +
+** Depuis l'onglet Subjects, cliquer sur le bouton Add
++
+image::addSubject.png[link="images/addSubjectTeacher.png",width="25%", align="center"]
+
+** Entrer l'identifiant, le nom et le libellé du sujet à ajouter 
++
+image::addSubjectPrompt.png[link="images/addSubjectPrompt.png",width="25%", align="center"]
+
+** Valider en cliquant sur Ok (ou annuler en cliquant sur Cancel)
++
+image::addSubjectProof.png[link="images/addSubjectProof.png",width="25%", align="center"]
+
+.Pour l'onglet Projects
+* Possibilité d'ajouter une ligne +
+** Depuis l'onglet Projects, cliquer sur le bouton Add
++
+image::addProject.png[link="images/addProjectTeacher.png",width="25%", align="center"]
+
+** Entrer le groupe et le sujet du projet à ajouter
++
+image::addProjectPrompt.png[link="images/addProjectPrompt.png",width="25%", align="center"]
+
+** Valider en cliquant sur Ok (ou annuler en cliquant sur Cancel)
++
+image::addProjectProof.png[link="images/addProjectProof.png",width="25%", align="center"]

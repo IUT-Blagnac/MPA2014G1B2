@@ -1,0 +1,80 @@
+= Documentation SPRINT 1
+:toc:
+:toc-title: Table des matières
+:toclevels: 4
+:encoding: UTF8
+:icons:
+:iconsdir: ./doc/images/icons
+:file: ../OPTI/OPTI_v3
+:Author:  Groupe projet 1B2
+:doctitle: tests de validation du Projet OPTI - DUT INFO S3/Module MPA
+:slideshowlocation: Your computer
+:copyright: {date={localdate}}, {slideshowlocation} *** {author} *** Powered by AsciiDoc and W3C Slidy &#169; 
+:revnumber: : Sprint 1 (bis)
+
+
+include::docConf-test.txt[]
+
+Participants : 
+
+- PIBOUBES Théo (SCRUM Master)
+- JACQUOT--FERNANDEZ Alex
+- RHAYOUR Hanae
+- SCUOTTO Aurélien
+- WOJTOWICZ Damien
+- NOTO Romain 
+
+== Tests de validation 
+ * Ouvrir l'interface en cliquant sur le fichier *_OPTI_v3_*
+ * Une fenêtre s'ouvre (Cf. Figure1) 
+
+
+*Figure1*
+
+image::Accueil.png[link="images/Accueil.png",width="30%"]
+
+
+=== Afficher la liste des étudiants + 
+ * Cliquer sur l'onglet "Students". 
+ * Un tableau d'étudiants doit s'afficher (Cf. Figure1) +
+ deux colonnes : nom, prenom, groupe
+ * faire glisser la molette verticale pour voir la liste en entier
+ 
+image::Accueil.png[link="images/Accueil.png",width="30%"]
+
+
+=== Afficher la liste des intervenants + 
+ * Cliquer sur l'onglet "Interv". 
+ * Un tableau d'intervenants doit s'afficher (Cf. Figure2) +
+ deux colonnes : nom, prenom 
+ 
+*Figure2*
+
+image::Interv.png[link="images/Interv.png",width="30%"]
+
+=== Afficher la liste des projets + 
+ * Cliquer sur l'onglet "Projets". 
+ * Un tableau de projets doit s'afficher (Cf. Figure3) +
+ deux colonnes : groupe, sujet
+
+*Figure3*
+
+image::Projects.png[link="images/Projects.png",width="30%"]
+ 
+
+=== Afficher la liste des sujets + 
+ * Cliquer sur l'onglet "Subjects". 
+ * Un tableau de sujets doit s'afficher (Cf. Figure4) +
+ trois colonnes : id, nom, titre 
+ * faire glisser la molette horizontale pour voir la liste en entier 
+
+*Figure4*
+
+image::Subject.png[link="images/Subject.png",width="30%"]
+
+=== Quitter l'interface + 
+ * Cliquer sur "quitter". +
+
+ 
+image::Quitter.png[link="images/Quitter.png",width="30%"]
+

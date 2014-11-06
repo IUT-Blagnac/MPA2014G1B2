@@ -1,0 +1,35 @@
+'-----------------------------------
+' UML concepts illustrated
+' G1B2 2014
+'-----------------------------------
+@startuml
+'-----------------------------------
+
+class ETUDIANTS {
+	nom
+	prenom
+	groupe
+}
+
+class SUJETS {
+	idSujet
+	nom
+	titre
+}
+
+class PROJETS {
+	groupe
+	idSujet
+}
+
+class INTERVENANTS {
+	nom
+	prenom
+}
+
+ETUDIANTS "0..*" -- "1..*" SUJETS
+(ETUDIANTS, SUJETS) 
+
+'-----------------------------------
+@enduml
+'-----------------------------------

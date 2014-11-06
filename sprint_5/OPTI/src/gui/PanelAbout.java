@@ -42,9 +42,9 @@ public class PanelAbout extends JPanel {
 				+ "\n"
 				+ "  Alex Jacquot-Fernandez\n"
 				+ "  Romain Noto\n"
-				+ "  ThÃ©o PiboubÃ¨s\n"
+				+ "  Théo Piboubès\n"
 				+ "  Hanae Rhayour\n"
-				+ "  AurÃ©lien Scuotto\n"
+				+ "  Aurélien Scuotto\n"
 				+ "  Damien Wojtowicz\n"
 				+ "\n"
 				+ "\n"
@@ -52,7 +52,7 @@ public class PanelAbout extends JPanel {
 				+ "  Sprint 5\n"
 				+ "\n"
 				+ "  DUT INFO S3/Module MPA\n"
-				+ "  UniversitÃ© Toulouse 2 Jean JaurÃ¨s\n"
+				+ "  Université Toulouse II Jean Jaurès\n"
 				+ "  IUT Blagnac\n";
 		return text;
 	}

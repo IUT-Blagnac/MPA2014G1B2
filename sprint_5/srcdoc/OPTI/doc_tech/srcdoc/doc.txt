@@ -1,0 +1,123 @@
+﻿= Documentation technique
+:Author:  Group 1B2
+:doctitle: OPTI technical documentation (M3301-MPA, G1B2)
+:slideshowlocation: Your computer
+:copyright: {date={localdate}}, {slideshowlocation} *** {author} *** Powered by AsciiDoc and W3C Slidy &#169; 
+:revnumber: 2
+
+include::docConf.txt[]
+
+== Product backlog
+
+.Backlog
+[width="100%",frag="top",options="header",cols="2,10"]
+|======
+|Task number|Description
+|*2895*|En tant qu’administrateur, je veux pouvoir afficher la liste des étudiants ou des intervenants ou des sujets ou des projets d’un fichier .csv dans l’IHM, en supprimer certains puis l’enregistrer dans un fichier .csv de mon choix
+|*2896*|En tant qu’administrateur, je veux pouvoir afficher la liste des étudiants puis ajouter un nouvel étudiant et sauvegarder la liste des étudiants dans un fichier .csv de mon choix
+|*2897*|En tant qu’administrateur, je veux pouvoir afficher la liste des intervenants puis ajouter un nouvel intervenant et sauvegarder la liste des intervenants dans un fichier .csv de mon choix
+|*2898*|En tant qu’administrateur, je veux pouvoir afficher la liste des sujets puis ajouter un nouveau sujet et sauvegarder la liste des projets dans un fichier .csv de mon choix
+|*2899*|En tant qu’administrateur, je veux pouvoir afficher la liste des projets puis ajouter un nouveau projet et sauvegarder la liste des projets dans un fichier .csv de mon choix
+|*2901*|En tant qu’administrateur, une fois la liste des étudiants ou des intervenants ou des sujets ou des projets affichée dans l’IHM, je veux pouvoir sélectionner (filtrer) les éléments affichés sur chacun des champs du fichier .csv correspondant
+|======
+
+== UI Tests
+
+- Application is launched by opening *_OPTI_v1.2.jar_*
+
+=== About tab
+
+The following image shows the application at its launch state.	
+
+image::ui/ui_about_tab.png[link="images/ui/ui_about_tab.png",width="40%"]
+
+=== Students tab
+
+- The following image shows the students list. It has three columns : "groupe", "nom" and "prenom"
+- It is possible to scroll through the list.
+
+image::ui/ui_students_tab.png[link="images/ui/ui_students_tab.png",width="40%"]
+
+=== Teachers tab
+
+- The following image shows the teachers list. It has two columns : "prenom" and "nom"
+- It is possible to scroll through the list.
+
+image::ui/ui_teachers_tab.png[link="images/ui/ui_teachers_tab.png",width="40%"]
+
+=== Subjects tab
+
+- The following image shows the subjects list. It has three columns : "id", "nom" and "titre"
+- It is possible to scroll through the list.
+
+image::ui/ui_subjects_tab.png[link="images/ui/ui_subjects_tab.png",width="40%"]
+
+=== Projects tab
+
+- The following image shows the projects list. It has two columns : "groupe" and "sujet"
+- It is possible to scroll through the list.
+
+image::ui/ui_projects_tab.png[link="images/ui/ui_projects_tab.png",width="40%"]
+
+== Classes details
+
+=== *data* package
+
+This package contains all the model classes used to represent data.
+These classes got the same attributes :
+
+- They have various fields (e.g : class Student contains group, last name and first name)
+- They have matching getters and setters that can read or update these fields
+
+.Class list
+[width="100%",frag="top",options="header"]
+|=======
+|Name|Description
+|Student.java|Structure representing a student
+|Project.java|Structure representing a project
+|Subject.java|Structure representing a subject
+|Teacher.java|Structure representing a teacher
+|=======
+
+=== *gui* package
+
+This package contains all the classes of the OPTI user interface.
+
+.Class list
+[width="100%",frag="top",options="header"]
+|========
+|Name|Description
+|DialogProject.java .4+^.^|These classes set up dialogs to add element (a project, a student... depending on the class)
+|DialogStudent.java
+|DialogSubject.java
+|DialogTeacher.java
+|Events.java|Central class used to listen and manage all user input (e.g. pressed buttons). This is done by getting to know what event occured and from what window/dialog it did.
+|Interface.java|This class sets up the main window (a JFrame).
+|Main.java|This class is a spring, it creates an instance of Interface.java and makes it visible.
+|PanelAbout.java .8+^.^|All these classes set up different panels of which type depends on the class like dialogs.
+|PanelButtons.java
+|PanelMenu.java
+|PanelProject.java
+|PanelStudent.java
+|PanelSubject.java
+|PanelTab.java
+|PanelTeacher.java
+|========
+
+=== *library* package
+
+This package contains controllers and the core part of the project, the CSV parser.
+
+.Class list
+[width="100%",frag="top",options="header"]
+|==========
+|Name|Description
+|CtrlProject.java .4+^.^|These are the controllers of model classes Project, Student... They are used to get and update data.
+|CtrlStudent.java
+|CtrlSubject.java
+|CtrlTeacher.java
+|OptiParser.java|This class contains the methods used to parse CSV files, which is done by opening a (CSV) file, reading it line by line and store its content at the same time.
+|OptiParserTest.java|This class achieves unit tests on the OptiParser class.
+|==========
+
+For further details, see the link:../javadoc/index.html[Javadoc].

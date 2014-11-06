@@ -1,0 +1,6 @@
+-screenies
+-highlighting?
+-in english?
+-interface documentation
+-more detailed info on Optiparser java files
+-backlog, algorithms
