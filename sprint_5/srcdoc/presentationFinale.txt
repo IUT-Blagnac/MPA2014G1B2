@@ -1,5 +1,5 @@
-= MPA : Final recipe presentation of OPTI
-:Author:  Alex Jacquot--Fernandez, Roman Noto, Théo Piboubès, Hanae Rhayour, Aurélien Scuotto, Damien Wojtowicz
+= MPA : Présentation finale de recette pour OPTI
+:Author: G1B2
 :lang: fr
 :toc:
 :slideshowlocation: Your computer
@@ -9,127 +9,64 @@
 
 == OPTI
 
+Participants au projet :
+-  Alex Jacquot--Fernandez
+-  Roman Noto
+-  Théo Piboubès
+-  Hanae Rhayour
+-  Aurélien Scuotto
+-  Damien Wojtowicz
+
 image::images/logoIUT.png[link="images/logoIUT.png"]
 image::images/logoUTJJ.png[link="images/logoUTJJ.png"]
-OPTI project has been created during the "MPA" module. This project consists in the creation of an application making easier the management of the tutored projects of the IUT. The process of development followed the sprint-based projects management "Agile" method. We have worked for about 60 hours on this project.
 
-== 1B2 group's OPTI : a halftone success
+== Bilan fonctionnel
 
-The weft of the project has issued several perturbations, due to software architecture and communication issues. Consequently, we are not able to deliver an application respecting the whole product backlog. The last runnable application has been released on sprint 2. Then, our work wasn't enough to complete the backlog.
-However, our sprint 2 OPTI is working. It provides different functionalities to user, as detailed in the next part. The main missing point was the cross-view of the data.
+=== OPTI
 
-=== The unfinished OPTI
+-  Afficher des informations à propos des concepteurs
+-  Créer/Modifier/Supprimer un sujet, un étudiant, un projet, un intervenant, un groupe
+-  Associer des sujets à des gropues de projet, un étudiant à un groupe
+-  Lister les projets (non) affectés et les équipes avec ou sans projet
+-  Ouvrir des fichiers CSV
+-  Sauvegarder dans des fichiers CSV
 
-==== Year's tutored projects list of topics
+Les autres fonctionalités n'étant pas prêtes, nous ne sommes pas en mesure de vous les présenter.
 
--  Create/Delete/Alter a topic
+=== OPTI Web
 
-==== Student teams' wishes
+-  Afficher les données des étudiants, des projets, des intervenants et des sujets
+-  Toutes les données sont croisées
 
--  Define a students team
--  Associate students to a team
+NOTE: Tout le backlog du produit OPTI Web a été respecté.
 
-==== Associate projects to student teams
+== Bilan financier
 
--  Define a topic for a team
--  List (un)affected projects
--  List (un)affected teams
+-  Nombre de jours de travail par employé : 9 jours
+-  Nombre d'employés : 6
+-  Coût journalier : 800,00 €/employé
+-  TOTAL : 43200 €
 
-==== Teachers association to distinct projects
+== Bilan technique
 
--  Define the teatchers for a tutored project
+-  Toutes les fonctionalités n'ont pas été implémentées dans l'application finale.
+-  Nous avons manqué de temps et d'organisation pour mener à bien le projet.
+-  Certaines personnes étaient complètement en dehors du code
+-  Au contraire, certains membres étaient irremplaçables sur leurs portions de code
 
-==== Other features
+== Bilan humain
 
-The other features of the backlog weren't ready at the end of the sprint 2. Unfortunately, and despite our hard work during the other sprints, we didn't produced an other well-working version. Details about programming problems will be explained later.
+-  La cohésion aurait pu être meilleure au sein du groupe
+-  L'organisation aurait du être meilleure
+-  La pression de la méthode Agile aurait pu être mieux gérée
 
-=== OPTI Web's success
+== Bilan général
 
-In spite of the unfinished version o OPTI, we did produced a fully-usable OPTI Web application. All the product's backlog is respected.
+Nos avons appris beaucoup de choses, malgré l'échec partiel du projet :
 
-==== General functions
-
--  As a surfer, I want to acced to OPTIweb.html from any media
--  As a surfer, I want to consult projects, topics, students and teachers in distinct web pages
--  As a surfer, I want to consult the name of the developpers, of the product owner and the technologies used
-
-==== Projects page
-
--  As a surfer, I want to see, for each project, the name, the title, the client, the chief, the team and the students who realised the project
--  As a surfer, I want to seach a project in the projects list by typing any string
-
-==== Topic page
-
--  As a surfer, I want to see, for each topic, its name, its title or the teams' name who realized the topic
--  As a surfer, I want to search a topic in the topic list by typing any string 
--  As a surfer, I want to select a topic and see the differents projects realizing the topic
-
-==== Students page
-
--  As a surfer, I want to see, for each student, his(her) last name, first name and group
--  As a surfer, I want to search a student in the topic list by typing any string 
--  As a surfer, I want to select a student and see the project he(she)'s realizing
-
-==== Teachers page
-
--  As a surfer, I want to see, for each teacher, his(her) last name, first name and group
--  As a surfer, I want to search a teacher in the topic list by typing any string 
--  As a surfer, I want to select a teacher and see the project he(she)'s affected to
-
-== A cost accordingly-based on our working time
-
-As an estimation of the amout of money our work may have cost to a company, we tought that the salary of each member of the team was about 35,00€ an hour, including all the taxes on work and social contributions. Considerating that we worked 55 hours on the project, and that we were six, the cost for a corporation would be :
-
-6*35,00*50 = 11.550€
-
-Of course, that value does not include the cost of the energy consumed by the computers and the lights, or any charges linked to the material buys, or even any miscalenious charges that a real company would have. 
-
-== A treacherous Java developpement
-
-=== A great start
-
-During the sprints -1 to 1, we didn't really worked on the project since these steps were kinds of tutorials about SVN, how to use a respository, Redmine, how to use Eclipse without breaking the project and a plenty of other things about life in general (French lessons with the definition of "terminé" (finished in English), and so on). Things have started to get serious with the sprint 2. 
-We worked well, we splited the tasks between all the members of the team and we produced a first version of OPTI. Functionalities of that V1 are light, but they works well. 
-OPTI is designed on an MVC-based architecture; we have designed a class diagram for the Model as an objective of developpement for that package. The Controler package includes all the functionalities of OPTI Parser, a library that contains the functions needed to read and write data into .csv files. It also includes the controllers corresponding to the different classes of the Model. The View is a bit different from the others. Indeed, it builds the GUI, and it works like the master of the application: it contains the main class, and calls the controlers to get all the informations needed to fill the GUI with the informations the user wants.
-That was a great time.
-
-=== A deadly refactor
-
-Sprint 3 started, we opened the .html file with the instructions for the week, and then we have seen that picture:
-
-image::images/DCsprint3.png[link="images/DCsprint3.png"]
-
-That is the class diagram of the Model that customer is waiting for. It is pretty more elaborated than our one, so a big refactor had to be launched. Moreover, all the functionalities of the product backlog with a priority rank >=4 had to be finished. OPTI V1 we produced during sprint 2 have suddenely been deprecated, because of its lack of functionality and its incorrect Model architecture.
-Reforms had started: due to the new Model and some overworking classes in the Viex, we decided to restart the developement of OPTI about from scratch. We have read again the backlog, and we realized that a lot of functionalities were missed when we planified the developement of OPTI. For the first time, we weren't able to finish our work for the sprint. SVN problems and refactors of its structure issued a hugge waste of time. The View class have been completely and suceffuly refactored, but Controler and Model package weren't finished, so the project didn't compiled. 
-Update problems occured, and lots work on our test programs were lost. We were already timeless, so we were very late.
-
-=== Remembers form our "Première année"
-
-Things weren't really good in the project, and then sprint 4 started. As every time in the beggining of a new sprint we read the topic. And then: surprise! We had to develop an What's On like Web application for OPTI. The aim of that part was to code a program which generates an Hypertext Markup Language file, in order to get a cross-media view for the projects, topics, students and teachers linked to the tutored projects of the IUT. Developpement was easy, and we finished it on time the sprint. Our OPTI Web has all the functionalities asked in the product backlog.
-
-== An original team with different skills
-
-Our team is composed by ourselves (we GUARANTEE that we don't lie). Usually, and on an human point of view, the feeling between us was good. Our skills were complementary: 
-
--  Alex is good in writing Batch files and in AsciiDoc
--  Romain is good in programming (with models and controlers) and in AsciiDoc
--  Théo is good in programming, Batch, AsciiDoc and Redmine
--  Hanae is good in AsciiDoc and communication
--  Aurélien is good in programming (especially with GUI) and in technical and team management
--  Damien is good in programming, Redmine, AsciiDoc and communication
-
-The main problem in the team was the communiation about technical issues. Indeed, when a critical problem occured, the whole team was paralized because we wasn't able to separate all the problems and solve them one by one. Moreover, we wasn't attentive enough to the backlog: we started to code immediately after the beggining of the sprint 2 so we didn't planificated enough the amout of work to come.
-
-== Hopefully, OPTI is a universitary project for students
-
-According to the OPTI application we produce, we can say that we hopefully didn't work for any company or organization. It would have cost 11.550€ to the company for an unfinished application and a lot of useless work, on a capitalst point of view. However, we have learned a lot of things thanks to the MPA module:
-
--  We have to read more carefully the backlog
--  We must planificate the work
--  We must communicate more efficientely about technical things
--  We must break down the problems into small and easy-solvable pieces
--  We had a view of the Agile method
--  We learned a lot of things about project management
--  We learned many things about test programs
-
-NOTE: Thank you for your attention !
+-  Nous avons eu une vision de la méthode Agile
+-  Nous avons eu une première expérience sérieuse de travail dans un groupe de projet
+-  Nous avons appris l'utilisation de divers outils de gestion de projet : Redmine, GitHub, Travis, Subversion
+-  Nous avons appris l'utilisation de divers outils de tests : Casper, Phantom
+-  Nous avons appris l'utilisation de divers outils de génération de documents : ASCIIdoc, PlantUML
+-  Nous avons appris à réaliser une application avec le modèle MVC
