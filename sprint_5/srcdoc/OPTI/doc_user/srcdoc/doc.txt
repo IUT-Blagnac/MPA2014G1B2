@@ -62,22 +62,22 @@ L’interface se présente comme suit :
 .A ce niveau, elle est dotée de plusieurs onglets : 
 about : La liste des membres du groupe 
 
-image::Apropos.png[link="images/Apropos.png",width="25%", align="center"]
+image::ui/ui_about_tab.png[link="images/ui/ui_about_tab.png",width="25%", align="center"]
 Students : la liste des étudiants, de leurs groupes réspectifs et de leurs noms et prénoms 
 
-image::Students.png[link="images/Students.png",width="25%", align="center"]
+image::ui/ui_students_tab.png[link="images/ui_students_tab.png",width="25%", align="center"]
 
 Interv : les et prenoms des intervenants sur les projets 
 
-image::Interv.png[link="images/Interv.png",width="25%", align="center"]
+image::ui/ui_teachers_tab.png[link="images/ui_teachers_tab.png",width="25%", align="center"]
 
 Subject : la liste des projets 
 
-image::Subject.png[link="images/Subject.png",width="25%", align="center"]
+image::ui/ui_subjects_tab.png[link="images/ui_subjects_tab.png",width="25%", align="center"]
 
 projects : les affectation des projets aux groupes 
 
-image::project.png[link="images/project.png",width="25%", align="center"]
+image::ui/ui_projects_tab.png[link="images/ui/ui_projects_tab.png",width="25%", align="center"]
 
 .Pour chaque onglets
 * Possibilité de supprimer une ligne
@@ -97,18 +97,6 @@ image::restore.png[link="images/restore.png",width="25%", align="center"]
 ** Résultat + 
 +
 image::restoreProof.png[link="images/restoreProof.png",width="25%", align="center"]
-
-
-* Possibilité d'ouvrir une liste d'acteurs à partir d'un fichier csv
-** Dans le menu supérieur gauche, cliquer sur le bouton File -> Sélectionner la liste à générer -> Open
-+
-image::save1.png[link="images/save1.png",width="25%", align="center"]
-
-**  Sélectionner le fichier -> Cliquer sur Ok
-+
-image::save2.png[link="images/save2.png",width="25%", align="center"]
-
-
 
 
 .Pour l'onglet Students

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="OPTIweb VOPTIweb" />
+<title>0.1 - V0.1</title>
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />    <!-- 1 -->
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />    <!-- 2 -->
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>    <!-- 3 -->
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>    <!-- 4 -->
+<style type='text/css'>    /* 5 */
+@media all and (orientation:portrait) { .landscape {display: none;} }
+@media all and (orientation:landscape) { .landscape {display: inline;} }
+</style>
+</head><body>
+
+    <!-- 6 -->
+
+<script>    // 7
+ // li click handler which fills the projects search bar
+ // with the value of the current data-find attribute
+ $( 'li[data-find]' ).on( 'click',function(event){
+  $("#autocomplete-input-projet").val($(this).attr('data-find')).trigger('change');
+ });
+</script>
+</body>
+</html>

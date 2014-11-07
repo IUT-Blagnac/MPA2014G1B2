@@ -23,41 +23,41 @@ include::docConf.txt[]
 
 == UI Tests
 
-- Application is launched by opening *_OPTI_v1.2.jar_*
+- Application is launched by opening *_OPTI.jar_*
 
 === About tab
 
 The following image shows the application at its launch state.	
 
-image::ui/ui_about_tab.png[link="images/ui/ui_about_tab.png",width="40%"]
+image::ui/ui_about_tab.png[link="images/ui/ui_about_tab.png",width="30%"]
 
 === Students tab
 
 - The following image shows the students list. It has three columns : "groupe", "nom" and "prenom"
 - It is possible to scroll through the list.
 
-image::ui/ui_students_tab.png[link="images/ui/ui_students_tab.png",width="40%"]
+image::ui/ui_students_tab.png[link="images/ui/ui_students_tab.png",width="30%"]
 
 === Teachers tab
 
 - The following image shows the teachers list. It has two columns : "prenom" and "nom"
 - It is possible to scroll through the list.
 
-image::ui/ui_teachers_tab.png[link="images/ui/ui_teachers_tab.png",width="40%"]
+image::ui/ui_teachers_tab.png[link="images/ui/ui_teachers_tab.png",width="30%"]
 
 === Subjects tab
 
 - The following image shows the subjects list. It has three columns : "id", "nom" and "titre"
 - It is possible to scroll through the list.
 
-image::ui/ui_subjects_tab.png[link="images/ui/ui_subjects_tab.png",width="40%"]
+image::ui/ui_subjects_tab.png[link="images/ui/ui_subjects_tab.png",width="30%"]
 
 === Projects tab
 
 - The following image shows the projects list. It has two columns : "groupe" and "sujet"
 - It is possible to scroll through the list.
 
-image::ui/ui_projects_tab.png[link="images/ui/ui_projects_tab.png",width="40%"]
+image::ui/ui_projects_tab.png[link="images/ui/ui_projects_tab.png",width="30%"]
 
 == Classes details
 
@@ -120,4 +120,4 @@ This package contains controllers and the core part of the project, the CSV pars
 |OptiParserTest.java|This class achieves unit tests on the OptiParser class.
 |==========
 
-For further details, see the link:../javadoc/index.html[Javadoc].
+For further details, see the link:javadoc/index.html[Javadoc].

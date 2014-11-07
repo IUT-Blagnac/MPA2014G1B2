@@ -1,0 +1,27 @@
+<!-- DEBUT page etudiants -->
+<div data-role="page" id="etudiants" data-title="OPTIweb - V0.1">
+<div data-role="header" data-add-back-btn="true">    <!-- 1 -->
+<h1>Etudiants 2014-2015</h1>
+
+</div>
+<div data-role="content">
+
+<form class="ui-filterable">
+<input id="autocomplete-input-etudiant" name="etudiant" data-type="search" placeholder="Etudiant ou Groupe X">    <!-- 2 -->
+</form>
+<ol id="listeetudiants" data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="false" data-input="#autocomplete-input-etudiant" data-divider-theme="b">
+<li data-role="list-divider">    <!-- 3 -->
+Etudiant<span class="ui-li-count" title="Groupe" style="right: 40px !important;">Groupe</span>
+</li>
+<li data-find="Arnauld ALEX">    <!-- 4 -->
+<a href="#projets">ALEX Arnauld<span class="ui-li-count" title="Groupe">Groupe F</span>
+</a>
+</li>
+<!-- 5 -->
+</ol>
+</div>
+<div data-role="footer">
+ <h4>OPTIweb V<span class="landscape">ersion </span>0.1 <i class="fa fa-group fa-2x"></i></h4>
+</div>
+</div>
+<!-- FIN page etudiants -->

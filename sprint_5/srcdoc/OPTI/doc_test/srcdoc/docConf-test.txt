@@ -1,6 +1,5 @@
 //-------- directories -----------
-:icons: 
-// :iconsdir: /Users/bruel/dev/images/icons
+:icons:
 :imagesdir: images
 :src: ./src/
 :srcdoc: ./srcdoc/

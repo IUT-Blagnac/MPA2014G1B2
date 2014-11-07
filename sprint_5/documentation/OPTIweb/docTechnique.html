@@ -763,11 +763,11 @@ navigateurs et supports du moment (PC, tablettes, smartphones).</p></div>
 <td class="content">
 <div class="dlist"><dl>
 <dt class="hdlist1">
-Membres de l'équipe enseignante
+Membres de l'équipe
 </dt>
 <dd>
 <p>
-Jean-Michel BRUEL, Jean-Michel INGLEBERT, André PÉNINOU et Olivier ROQUES
+Alex JACQUOT&#8212;FERNANDEZ, Romain NOTO, Théo PIBOUBÈS, Hanae RHAYOUR, Aurélien SCUOTTO, Damien WOJTOWICZ
 </p>
 </dd>
 </dl></div>
@@ -962,7 +962,34 @@ par le programme <em>MakeOPTIweb.java</em> qui à partir des fichiers csv (Sujet
 possède la structure <tt>html/jquery/mobile</tt> suivante :</p></div>
 <div class="listingblock">
 <div class="content">
-<pre><tt>include:&lt;chemin&gt;[&lt;nomFichier&gt;]</tt></pre>
+<pre><tt>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+&lt;meta name="generator" content="OPTIweb VOPTIweb" /&gt;
+&lt;title&gt;0.1 - V0.1&lt;/title&gt;
+&lt;link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" /&gt;    &lt;!-- 1 --&gt;
+&lt;link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" /&gt;    &lt;!-- 2 --&gt;
+&lt;script src="http://code.jquery.com/jquery-1.9.1.min.js"&gt;&lt;/script&gt;    &lt;!-- 3 --&gt;
+&lt;script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"&gt;&lt;/script&gt;    &lt;!-- 4 --&gt;
+&lt;style type='text/css'&gt;    /* 5 */
+@media all and (orientation:portrait) { .landscape {display: none;} }
+@media all and (orientation:landscape) { .landscape {display: inline;} }
+&lt;/style&gt;
+&lt;/head&gt;&lt;body&gt;
+
+    &lt;!-- 6 --&gt;
+
+&lt;script&gt;    // 7
+ // li click handler which fills the projects search bar
+ // with the value of the current data-find attribute
+ $( 'li[data-find]' ).on( 'click',function(event){
+  $("#autocomplete-input-projet").val($(this).attr('data-find')).trigger('change');
+ });
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</tt></pre>
 </div></div>
 <div class="colist arabic"><ol>
 <li>
@@ -1039,7 +1066,27 @@ handler jquery de sélection des projets depuis les pages #sujets, #etudiants ou
 <h3 id="_contenu_de_la_page_d_8217_accueil">Contenu de la page d&#8217;accueil</h3>
 <div class="paragraph"><p>Le programme <em>MakeOPTIweb.java</em> produit pour la page d&#8217;accueil le code <tt>html/jquery/mobile</tt> suivant :</p></div>
 <div class="listingblock">
-<div class="content"></div></div>
+<div class="content">
+<pre><tt>&lt;!-- DEBUT page accueil --&gt;
+&lt;div data-role="page" id="accueil" data-title="OPTIweb - V0.1"&gt;
+&lt;div data-role="header" data-add-back-btn="true"&gt;
+&lt;h1&gt;P&lt;span class="landscape"&gt;rojets &lt;/span&gt;tut&lt;span class="landscape"&gt;orés&lt;/span&gt; 2014-2015&lt;br/&gt;Département INFO&lt;span class="landscape"&gt;RMATIQUE&lt;/span&gt;&lt;br/&gt;IUT de Blagnac&lt;/h1&gt;
+&lt;a href="#credits" data-theme="b" class="ui-btn-right"&gt;Crédits&lt;/a&gt;   &lt;!-- 1 --&gt;
+&lt;/div&gt;
+&lt;div data-role="content"&gt;
+&lt;ul data-role="listview" data-inset="true" id="listeSources"&gt;
+  &lt;li&gt;&lt;a href="#projets"&gt;&lt;i class="fa fa-tasks"&gt;&lt;/i&gt; Projets&lt;/a&gt;&lt;/li&gt;   &lt;!-- 1 --&gt;
+  &lt;li&gt;&lt;a href="#sujets"&gt;&lt;i class="fa fa-copy"&gt;&lt;/i&gt; Sujets&lt;/a&gt;&lt;/li&gt;   &lt;!-- 1 --&gt;
+  &lt;li&gt;&lt;a href="#etudiants"&gt;&lt;i class="fa fa-group"&gt;&lt;/i&gt; Etudiants&lt;/a&gt;&lt;/li&gt;   &lt;!-- 1 --&gt;
+  &lt;li&gt;&lt;a href="#intervenants"&gt;&lt;i class="fa fa-group"&gt;&lt;/i&gt; Intervenants&lt;/a&gt;&lt;/li&gt;   &lt;!-- 1 --&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div data-role="footer"&gt;
+ &lt;h4&gt;OPTIweb V&lt;span class="landscape"&gt;ersion &lt;/span&gt;0.1 &lt;i class="fa fa- fa-2x"&gt;&lt;/i&gt;&lt;/h4&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- FIN page accueil --&gt;</tt></pre>
+</div></div>
 <div class="colist arabic"><ol>
 <li>
 <p>
@@ -1059,7 +1106,41 @@ de l&#8217;année en indiquant leur nom, leur titre, leur client, leur supervise
 <h3 id="_contenu_de_la_page_projets">Contenu de la page Projets</h3>
 <div class="paragraph"><p>Le programme <em>MakeOPTIweb.java</em> produit pour la page <tt>#projets</tt> le code <tt>html/jquery/mobile</tt> suivant :</p></div>
 <div class="listingblock">
-<div class="content"></div></div>
+<div class="content">
+<pre><tt>&lt;!-- DEBUT page projets --&gt;
+&lt;div data-role="page" id="projets" data-title="OPTIweb - V0.1"&gt;
+&lt;div data-role="header" data-add-back-btn="true"&gt;
+&lt;h1&gt;Projets 2014-2015&lt;/h1&gt;
+
+&lt;/div&gt;
+&lt;div data-role="content"&gt;
+&lt;form class="ui-filterable"&gt;
+&lt;input id="autocomplete-input-projet" name="projet" data-type="search" placeholder="Vous cherchez ?..."&gt;   &lt;!-- 1 --&gt;
+&lt;/form&gt;
+&lt;ol id="listeprojets" data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="false" data-input="#autocomplete-input-projet"&gt;
+&lt;li&gt;   &lt;!-- 2 --&gt;
+&lt;p&gt;
+&lt;b&gt;[Archeologie]&lt;/b&gt; Groupe de recherche Chasséen Méridional
+&lt;/p&gt;
+&lt;p&gt;
+&lt;b&gt;Client :&lt;/b&gt; TISSIER Evelyne
+&lt;/p&gt;
+&lt;p&gt;
+&lt;b&gt;Superviseur :&lt;/b&gt; CANUT Marie-Françoise
+&lt;/p&gt;
+&lt;p&gt;
+&lt;b&gt;Groupe A :&lt;/b&gt; Etienne LARROUY - Victor PINQUIER - Antoine RIVALIER - Jean-Sebastien TRILLE -
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;!-- 3 --&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div data-role="footer"&gt;
+ &lt;h4&gt;OPTIweb V&lt;span class="landscape"&gt;ersion &lt;/span&gt;0.1 &lt;i class="fa fa-tasks fa-2x"&gt;&lt;/i&gt;&lt;/h4&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- FIN page projets --&gt;</tt></pre>
+</div></div>
 <div class="colist arabic"><ol>
 <li>
 <p>
@@ -1089,7 +1170,39 @@ de l&#8217;année en indiquant leur nom, leur titre et le ou les groupe(s) d'ét
 <h3 id="_contenu_de_la_page_sujets">Contenu de la page Sujets</h3>
 <div class="paragraph"><p>Le programme <em>MakeOPTIweb.java</em> produit pour la page <tt>#sujets</tt> le code <tt>html/jquery/mobile</tt> suivant :</p></div>
 <div class="listingblock">
-<div class="content"></div></div>
+<div class="content">
+<pre><tt>&lt;!-- DEBUT page sujets --&gt;
+&lt;div data-role="page" id="sujets" data-title="OPTIweb - V0.1"&gt;
+&lt;div data-role="header" data-add-back-btn="true"&gt;    &lt;!-- 1 --&gt;
+&lt;h1&gt;Sujets 2014-2015&lt;/h1&gt;
+
+&lt;/div&gt;
+&lt;div data-role="content"&gt;
+
+&lt;form class="ui-filterable"&gt;
+&lt;input id="autocomplete-input-sujet" name="sujet" data-type="search" placeholder="Vous cherchez ?"&gt;    &lt;!-- 2 --&gt;
+&lt;/form&gt;
+&lt;ol id="listesujets" data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="false" data-input="#autocomplete-input-sujet" data-divider-theme="b" data-count-theme="a"&gt;
+&lt;li data-role="list-divider"&gt;    &lt;!-- 3 --&gt;
+Sujet&lt;span class="ui-li-count" title="Groupe" style="right: 40px !important;"&gt;Groupe&lt;/span&gt;
+&lt;/li&gt;
+&lt;li data-find="[ApexEComm]"&gt;    &lt;!-- 4 --&gt;
+&lt;a href="#projets"&gt;[ApexEComm] &lt;br/&gt;
+&lt;div style="white-space:normal;"&gt;
+&lt;span&gt;&lt;b&gt;Application et tutoriel Oracle Apex pour un site d'e-commerce&lt;/b&gt;
+&lt;/span&gt;&lt;span class="ui-li-count"&gt;I&lt;/span&gt;
+&lt;/div&gt;
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;!-- 5 --&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div data-role="footer"&gt;
+ &lt;h4&gt;OPTIweb V&lt;span class="landscape"&gt;ersion &lt;/span&gt;0.1 &lt;i class="fa fa-copy fa-2x"&gt;&lt;/i&gt;&lt;/h4&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- FIN page sujets --&gt;</tt></pre>
+</div></div>
 <div class="colist arabic"><ol>
 <li>
 <p>
@@ -1153,14 +1266,18 @@ dans le champ de recherche des projets.</p></div>
 L&#8217;action <tt>click</tt> sur les items (<tt>li</tt>) comportant 1 attribut <tt>data-find</tt>
 </p>
 <div class="listingblock">
-<div class="content"></div></div>
+<div class="content">
+<pre><tt>$( 'li[data-find]' ).on( 'click',function</tt></pre>
+</div></div>
 </li>
 <li>
 <p>
 exécute le code (l&#8217;handler) suivant :
 </p>
 <div class="listingblock">
-<div class="content"></div></div>
+<div class="content">
+<pre><tt>$("#autocomplete-input-projet").val($(this).attr('data-find')).trigger('change');</tt></pre>
+</div></div>
 <div class="openblock">
 <div class="content">
 <div class="paragraph"><p>qui place le contenu actuel de l&#8217;attribut <tt>data-find</tt> dans le champs <tt>input</tt> de recherche des projets d&#8217;id <tt>autocomplete-input-projet</tt>, puis valide la modification.</p></div>
@@ -1185,7 +1302,35 @@ de l&#8217;année dans une liste numérotée en indiquant leur nom, leur prénom
 <h3 id="_contenu_de_la_page_etudiants">Contenu de la page Etudiants</h3>
 <div class="paragraph"><p>Le programme <em>MakeOPTIweb.java</em> produit pour la page <tt>#etudiants</tt> le code <tt>html/jquery/mobile</tt> suivant :</p></div>
 <div class="listingblock">
-<div class="content"></div></div>
+<div class="content">
+<pre><tt>&lt;!-- DEBUT page etudiants --&gt;
+&lt;div data-role="page" id="etudiants" data-title="OPTIweb - V0.1"&gt;
+&lt;div data-role="header" data-add-back-btn="true"&gt;    &lt;!-- 1 --&gt;
+&lt;h1&gt;Etudiants 2014-2015&lt;/h1&gt;
+
+&lt;/div&gt;
+&lt;div data-role="content"&gt;
+
+&lt;form class="ui-filterable"&gt;
+&lt;input id="autocomplete-input-etudiant" name="etudiant" data-type="search" placeholder="Etudiant ou Groupe X"&gt;    &lt;!-- 2 --&gt;
+&lt;/form&gt;
+&lt;ol id="listeetudiants" data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="false" data-input="#autocomplete-input-etudiant" data-divider-theme="b"&gt;
+&lt;li data-role="list-divider"&gt;    &lt;!-- 3 --&gt;
+Etudiant&lt;span class="ui-li-count" title="Groupe" style="right: 40px !important;"&gt;Groupe&lt;/span&gt;
+&lt;/li&gt;
+&lt;li data-find="Arnauld ALEX"&gt;    &lt;!-- 4 --&gt;
+&lt;a href="#projets"&gt;ALEX Arnauld&lt;span class="ui-li-count" title="Groupe"&gt;Groupe F&lt;/span&gt;
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;!-- 5 --&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div data-role="footer"&gt;
+ &lt;h4&gt;OPTIweb V&lt;span class="landscape"&gt;ersion &lt;/span&gt;0.1 &lt;i class="fa fa-group fa-2x"&gt;&lt;/i&gt;&lt;/h4&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- FIN page etudiants --&gt;</tt></pre>
+</div></div>
 <div class="colist arabic"><ol>
 <li>
 <p>
@@ -1241,7 +1386,38 @@ de l&#8217;année en indiquant leur nom, leur prénom et le nombre de fois où i
 <h3 id="_contenu_de_la_page_intervenants">Contenu de la page Intervenants</h3>
 <div class="paragraph"><p>Le programme <em>MakeOPTIweb.java</em> produit pour la page <tt>#intervenants</tt> le code <tt>html/jquery/mobile</tt> suivant :</p></div>
 <div class="listingblock">
-<div class="content"></div></div>
+<div class="content">
+<pre><tt>&lt;!-- DEBUT page intervenants --&gt;
+&lt;div data-role="page" id="intervenants" data-title="OPTIweb - V0.1"&gt;
+&lt;div data-role="header" data-add-back-btn="true"&gt;    &lt;!-- 1 --&gt;
+&lt;h1&gt;Intervenants 2014-2015&lt;/h1&gt;
+
+&lt;/div&gt;
+&lt;div data-role="content"&gt;
+
+&lt;form class="ui-filterable"&gt;
+&lt;input id="autocomplete-input-intervenant" name="intervenant" data-type="search" placeholder="Intervenant"&gt;    &lt;!-- 2 --&gt;
+&lt;/form&gt;
+&lt;ul id="listeintervenants" data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="false" data-input="#autocomplete-input-intervenant" data-divider-theme="b"&gt;
+&lt;li data-role="list-divider"&gt;    &lt;!-- 3 --&gt;
+Intervenant&lt;span class="ui-li-count" style="right: 110px !important;" title="Client"&gt;Client&lt;/span&gt;&lt;span class="ui-li-count" title="Superviseur"&gt;Superviseur&lt;/span&gt;
+&lt;/li&gt;
+&lt;li data-find="BRUEL Jean-Michel"&gt;    &lt;!-- 4 --&gt;
+&lt;a href="#projets"&gt;
+BRUEL Jean-Michel
+&lt;span class="ui-li-count" style="right: 120px !important;" title="Client"&gt;3&lt;/span&gt;
+&lt;span class="ui-li-count" title="Superviseur"&gt;0&lt;/span&gt;
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;!-- 5 --&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div data-role="footer"&gt;
+ &lt;h4&gt;OPTIweb V&lt;span class="landscape"&gt;ersion &lt;/span&gt;0.1 &lt;i class="fa fa-group fa-2x"&gt;&lt;/i&gt;&lt;/h4&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- FIN page intervenants --&gt;</tt></pre>
+</div></div>
 <div class="colist arabic"><ol>
 <li>
 <p>
@@ -1312,7 +1488,36 @@ L&#8217;ensemble des intervenants contenant la chaine saisie est alors fourni
 <h3 id="_contenu_de_la_page_crédits">Contenu de la page Crédits</h3>
 <div class="paragraph"><p>Le programme <em>MakeOPTIweb.java</em> produit pour la page <em>#credits</em> le code <tt>html/jquery/mobile</tt> suivant :</p></div>
 <div class="listingblock">
-<div class="content"></div></div>
+<div class="content">
+<pre><tt>&lt;!-- DEBUT page credits --&gt;
+&lt;div data-role="page" id="credits" data-title="OPTIweb - V0.1 - Crédits"&gt;
+&lt;div data-role="header" data-add-back-btn="true"&gt;    &lt;!-- 1 --&gt;
+&lt;h1&gt;Crédits&lt;/h1&gt;
+&lt;/div&gt;
+&lt;div data-role="content"&gt;
+&lt;p&gt;Cette application a été réalisée dans le cadre du module M3301/MPA du DUT Informatique à l'IUT de Blagnac.&lt;/p&gt;
+&lt;ul data-role="listview" data-inset="true" id="contacts" data-theme="a" data-divider-theme="b"&gt;
+    &lt;li data-role="list-divider"&gt;Product Owner&lt;/li&gt;
+    &lt;li&gt;André PÉNINOU&lt;/li&gt;
+    &lt;li&gt;Université Toulouse 2 - IUT de Blagnac
+    &lt;br/&gt;Département INFORMATIQUE&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul data-role="listview" data-inset="true" id="listecredits" data-theme="a" data-divider-theme="b"&gt;
+&lt;li data-role="list-divider"&gt;Membres de l'équipe enseignante&lt;/li&gt;
+&lt;li&gt;Jean-Michel BRUEL&lt;/li&gt;&lt;li&gt;Jean-Michel INGLEBERT&lt;/li&gt;&lt;li&gt;André PÉNINOU&lt;/li&gt;&lt;li&gt;Olivier ROQUES&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul data-role="listview" data-inset="true" id="listepowered" data-theme="a" data-divider-theme="b"&gt;
+&lt;li data-role="list-divider"&gt;Propulsé par&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://jquerymobile.com/" target="autrePage"&gt;http://jquerymobile.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://fortawesome.github.io/Font-Awesome/" target="autrePage"&gt;http://fortawesome.github.io/Font-Awesome/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div data-role="footer"&gt;
+&lt;h4&gt;OPTIweb V&lt;span class="landscape"&gt;ersion &lt;/span&gt;0.1 &lt;i class="fa fa- fa-2x"&gt;&lt;/i&gt;&lt;/h4&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- FIN page credits --&gt;</tt></pre>
+</div></div>
 <div class="colist arabic"><ol>
 <li>
 <p>
@@ -1327,7 +1532,7 @@ Bouton de retour à la page d&#8217;accueil
 <div id="footnotes"><hr /></div>
 <div id="footer">
 <div id="footer-text">
-Dernière mise à jour 2014-11-06 10:56:19 Paris, Madrid
+Dernière mise à jour 2014-11-06 17:59:08 Paris, Madrid
 </div>
 </div>
 </body>

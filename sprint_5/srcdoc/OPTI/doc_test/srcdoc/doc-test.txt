@@ -25,13 +25,13 @@ Participants :
 - NOTO Romain 
 
 == Tests de validation 
- * Ouvrir l'interface en cliquant sur le fichier *_OPTI_v3_*
+ * Ouvrir l'interface en cliquant sur le fichier *_OPTI.jar_*
  * Une fenêtre s'ouvre (Cf. Figure1) 
 
 
 *Figure1*
 
-image::Accueil.png[link="images/Accueil.png",width="30%"]
+image::ui/ui_about_tab.png[link="images/ui/ui_about_tab.png",width="30%"]
 
 
 === Afficher la liste des étudiants + 
@@ -40,7 +40,7 @@ image::Accueil.png[link="images/Accueil.png",width="30%"]
  deux colonnes : nom, prenom, groupe
  * faire glisser la molette verticale pour voir la liste en entier
  
-image::Accueil.png[link="images/Accueil.png",width="30%"]
+image::ui/ui_students_tab.png[link="images/ui/ui_students_tab.png",width="30%"]
 
 
 === Afficher la liste des intervenants + 
@@ -50,7 +50,7 @@ image::Accueil.png[link="images/Accueil.png",width="30%"]
  
 *Figure2*
 
-image::Interv.png[link="images/Interv.png",width="30%"]
+image::ui/ui_teachers_tab.png[link="images/ui/ui_teachers_tab.png",width="30%"]
 
 === Afficher la liste des projets + 
  * Cliquer sur l'onglet "Projets". 
@@ -59,7 +59,7 @@ image::Interv.png[link="images/Interv.png",width="30%"]
 
 *Figure3*
 
-image::Projects.png[link="images/Projects.png",width="30%"]
+image::ui/ui_projects_tab.png[link="images/ui/ui_projects_tab.png",width="30%"]
  
 
 === Afficher la liste des sujets + 
@@ -70,11 +70,11 @@ image::Projects.png[link="images/Projects.png",width="30%"]
 
 *Figure4*
 
-image::Subject.png[link="images/Subject.png",width="30%"]
+image::ui/ui_subjects_tab.png[link="images/ui/ui_subjects_tab.png",width="30%"]
 
 === Quitter l'interface + 
  * Cliquer sur "quitter". +
 
  
-image::Quitter.png[link="images/Quitter.png",width="30%"]
+image::ui/ui_quit.png[link="images/ui/ui_quit.png",width="30%"]
 

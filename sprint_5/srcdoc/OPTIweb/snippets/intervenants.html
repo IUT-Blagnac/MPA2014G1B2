@@ -1,0 +1,30 @@
+<!-- DEBUT page intervenants -->
+<div data-role="page" id="intervenants" data-title="OPTIweb - V0.1">
+<div data-role="header" data-add-back-btn="true">    <!-- 1 -->
+<h1>Intervenants 2014-2015</h1>
+
+</div>
+<div data-role="content">
+
+<form class="ui-filterable">
+<input id="autocomplete-input-intervenant" name="intervenant" data-type="search" placeholder="Intervenant">    <!-- 2 -->
+</form>
+<ul id="listeintervenants" data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="false" data-input="#autocomplete-input-intervenant" data-divider-theme="b">
+<li data-role="list-divider">    <!-- 3 -->
+Intervenant<span class="ui-li-count" style="right: 110px !important;" title="Client">Client</span><span class="ui-li-count" title="Superviseur">Superviseur</span>
+</li>
+<li data-find="BRUEL Jean-Michel">    <!-- 4 -->
+<a href="#projets">
+BRUEL Jean-Michel
+<span class="ui-li-count" style="right: 120px !important;" title="Client">3</span>
+<span class="ui-li-count" title="Superviseur">0</span>
+</a>
+</li>
+<!-- 5 -->
+</ul>
+</div>
+<div data-role="footer">
+ <h4>OPTIweb V<span class="landscape">ersion </span>0.1 <i class="fa fa-group fa-2x"></i></h4>
+</div>
+</div>
+<!-- FIN page intervenants -->
